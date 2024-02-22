@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo game</title>
+  </head>
+  <body>
+    <input type="text" id="input">
+    <button id="btn" onclick="add()">add</button>
+    <ul id="list-container">
+      <li>Helo
+      <button onclick="del(event)">delete</button>
+    </li>
+    </ul>
+
+    <script>
+      var input = document.getElementById('input')
+      var ul = document.getElementById('list-container')
+
+
+      function add(){
+          var listitem=document.createElement("li")
+          listitem.innerHTML = input.value + "<button onclick='del(event)'>delete</button>"
+          ul.append(listitem)
+      }
+      function del(event){
+    event.target.parentElement.remove()      }
+    </script>
+  </body>
+</html>

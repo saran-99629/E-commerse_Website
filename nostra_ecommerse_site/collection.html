@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <h1>Nostra</h1>
+      <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">Home</a></p>
+        <p class="navbar-link"><a href="collection.html">Collections</a></p>
+        <p class="navbar-link"><a href="">Contact</a></p>
+      </div>
+      <div class="navbar-menu-toggle" onclick="shownavbar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <!-- side navbar -->
+    <div class="side-navbar">
+      <p style="text-align: right" onclick="closenav()">
+        <i class="fa-solid fa-xmark" style="cursor: pointe"></i>
+      </p>
+      <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="index.html">Home</a></p>
+        <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+        <p class="side-navbar-link"><a href="">Contact</a></p>
+      </div>
+    </div>
+
+   <div class="product-section">
+    <form class="product-search">
+        <input type="text" name="" id="search" placeholder="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </form>
+    <div class="products" id="products">
+        <div class="product-box">
+        <img src="https://source.unsplash.com/random/200x200/?white shirt" alt="">
+        <p>White Shirt</p>
+    </div>
+        <div class="product-box">
+            <img src="https://source.unsplash.com/random/200x200/?Black shirt" alt="">
+            <p>black Shirt</p>
+    
+    </div>
+    <div class="product-box">
+        <img src="https://source.unsplash.com/random/200x200/?white shoe" alt="">
+        <p>White shoe</p>
+    </div>
+        <div class="product-box">
+            <img src="https://source.unsplash.com/random/200x200/?Nike shoe" alt="">
+            <p>Nike Shoe</p>
+    
+    </div>
+    <div class="product-box">
+        <img src="https://source.unsplash.com/random/200x200/?causal shirt" alt="">
+        <p>causal Shirt</p>
+    </div>
+        <div class="product-box">
+            <img src="https://source.unsplash.com/random/200x200/?spiderman" alt="">
+            <p>spiderman </p>
+    
+    </div>
+
+   </div>
+    <!-- service -->
+ 
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-conatiner">
+      <div class="footer-box-1">
+        <h2 class="headingText">Nostra</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae officia labore sed voluptatum facilis nobis aliquam nisi ex tenetur iste?</p>
+        <div class="footer-icon-container">
+          <i class="fa-brands fa-instragram" style="color: white;"></i>
+          <i class="fa-brands fa-twitter" style="color: white;"></i>
+          <i class="fa-brands fa-facebook" style="color: white;"></i>
+        </div>
+      </div>
+      <p>@sarangmail.com</p>
+    </div>
+  </div>
+    <script src="collection.js"></script>
+  </body>
+</html>
